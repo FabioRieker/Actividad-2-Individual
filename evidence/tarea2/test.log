@@ -25,7 +25,7 @@ setup-test-setup.js                  | setup-test-setup                  | 365 b
 
                                      | Initial total                     |  87.28 kB
 
-Application bundle generation complete. [1.203 seconds] - 2026-11-26T12:18:06.431Z
+Application bundle generation complete. [1.237 seconds] - 2026-11-26T12:24:32.974Z
 
 
 [1m[30m[46m RUN [49m[39m[22m [36mv4.1.12 [39m[90m/home/elseto/DAM2/interfaces/ActividadInd2/wt/tarea-2[39m
@@ -33,6 +33,6 @@ Application bundle generation complete. [1.203 seconds] - 2026-11-26T12:18:06.43
 
 [2m Test Files [22m [1m[32m3 passed[39m[22m[90m (3)[39m
 [2m      Tests [22m [1m[32m12 passed[39m[22m[90m (12)[39m
-[2m   Start at [22m 13:18:06
-[2m   Duration [22m 1.75s[2m (transform 916ms, setup 557ms, import 1.79s, tests 249ms, environment 1.15s)[22m
+[2m   Start at [22m 13:24:33
+[2m   Duration [22m 1.74s[2m (transform 921ms, setup 591ms, import 1.77s, tests 243ms, environment 1.17s)[22m
 

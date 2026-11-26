@@ -1,5 +1,4 @@
 import { Component, inject } from '@angular/core';
-import type { SearchbarCustomEvent, SelectCustomEvent } from '@ionic/angular';
 import {
   IonBadge,
   IonContent,
@@ -16,6 +15,7 @@ import {
   IonTitle,
   IonToolbar,
 } from '@ionic/angular/standalone';
+import type { SearchbarCustomEvent, SelectCustomEvent } from '@ionic/angular/standalone';
 
 import type { PackagePriority, PackageStatus } from '../models/package.model';
 import { PackageService } from '../services/package.service';
