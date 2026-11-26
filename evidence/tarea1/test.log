@@ -1,0 +1,39 @@
+$ npm test
+
+> logitrack-express@0.0.1 test
+> npm run test:unit
+
+
+> logitrack-express@0.0.1 test:unit
+> ng test --no-watch
+
+Using Vitest configuration file: /home/elseto/DAM2/interfaces/ActividadInd2/Actividad-2-Individual/vitest.config.mts
+❯ Building...
+One or more browsers which are configured in the project's Browserslist configuration fall outside Angular's browser support for this version.
+Unsupported browsers:
+chrome 110, chrome 109, chrome 108, chrome 107, edge 110, edge 109, edge 108, edge 107, firefox 111, firefox 110, firefox 109, firefox 108, firefox 107, firefox 106, ios_saf 16.3, ios_saf 16.2, ios_saf 16.1, safari 16.3, safari 16.2, safari 16.1
+✔ Building...
+Initial chunk files                  | Names                             |  Raw size
+styles.css                           | styles                            |  57.32 kB | 
+spec-app-services-package.service.js | spec-app-services-package.service |   5.46 kB | 
+chunk-RSTWSNOR.js                    | -                                 |   4.75 kB | 
+spec-app-home-home.page.js           | spec-app-home-home.page           |   4.14 kB | 
+spec-app-app.component.js            | spec-app-app.component            |   1.93 kB | 
+init-testbed.js                      | init-testbed                      |   1.21 kB | 
+vitest-mock-patch.js                 | vitest-mock-patch                 | 974 bytes | 
+setup-test-setup.js                  | setup-test-setup                  | 365 bytes | 
+
+                                     | Initial total                     |  76.16 kB
+
+Application bundle generation complete. [1.260 seconds] - 2026-11-26T12:17:53.798Z
+
+
+ RUN  v4.1.12 /home/elseto/DAM2/interfaces/ActividadInd2/Actividad-2-Individual
+
+
+ Test Files  3 passed (3)
+      Tests  7 passed (7)
+   Start at  13:17:53
+   Duration  2.49s (transform 1.72s, setup 640ms, import 3.26s, tests 232ms, environment 1.21s)
+
+exit=0

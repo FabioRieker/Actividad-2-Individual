@@ -1,0 +1,47 @@
+$ npm run build
+
+> logitrack-express@0.0.1 build
+> ng build
+
+❯ Building...
+One or more browsers which are configured in the project's Browserslist configuration fall outside Angular's browser support for this version.
+Unsupported browsers:
+chrome 110, chrome 109, chrome 108, chrome 107, edge 110, edge 109, edge 108, edge 107, firefox 111, firefox 110, firefox 109, firefox 108, firefox 107, firefox 106, ios_saf 16.3, ios_saf 16.2, ios_saf 16.1, safari 16.3, safari 16.2, safari 16.1
+✔ Building...
+Initial chunk files | Names         |  Raw size | Estimated transfer size
+chunk-2TWCZOV6.js   | -             | 364.15 kB |                92.89 kB
+styles-DI5BGN4B.css | styles        |  46.30 kB |                 5.43 kB
+chunk-WIIXSP6G.js   | -             |  38.30 kB |                13.27 kB
+chunk-SLK4DEAV.js   | -             |  10.16 kB |                 2.62 kB
+chunk-6MZI7UTI.js   | -             |   8.85 kB |                 3.31 kB
+chunk-WH2HIQK6.js   | -             |   5.58 kB |                 2.06 kB
+chunk-DI7DBM3V.js   | -             |   2.25 kB |               844 bytes
+chunk-2NIBOUWM.js   | -             | 998 bytes |               998 bytes
+chunk-BVKIAEZ7.js   | -             | 975 bytes |               975 bytes
+main-XVEDR6HH.js    | main          | 943 bytes |               943 bytes
+chunk-JYJ4T3PO.js   | -             | 932 bytes |               932 bytes
+chunk-FMS6MVXN.js   | -             | 911 bytes |               911 bytes
+chunk-7CGTOI24.js   | -             | 618 bytes |               618 bytes
+chunk-I547WOKC.js   | -             | 544 bytes |               544 bytes
+chunk-NMFL75IO.js   | -             |  99 bytes |                99 bytes
+
+                    | Initial total | 481.62 kB |               126.45 kB
+
+Lazy chunk files    | Names         |  Raw size | Estimated transfer size
+chunk-BGPO342Z.js   | p-DlwWvSZ-    |   4.86 kB |                 1.96 kB
+chunk-BCGSXUJX.js   | home-page     |   1.65 kB |               707 bytes
+chunk-D6P6IE4S.js   | p-LIYB2NaM    |   1.62 kB |               766 bytes
+chunk-TLMT4L5S.js   | p-BmVRXR1y    | 948 bytes |               948 bytes
+chunk-UO5PFZSU.js   | p-CRcc_AVn    | 677 bytes |               677 bytes
+chunk-RFNCFZRK.js   | p-du4WR5yd    | 498 bytes |               498 bytes
+chunk-M6HEYR22.js   | p-D6Ynv7Xh    | 404 bytes |               404 bytes
+chunk-S4NDFJPI.js   | p-BKeF8t9j    | 286 bytes |               286 bytes
+chunk-XWVTNRHJ.js   | p-BXR3hJaT    | 226 bytes |               226 bytes
+chunk-OBSGM4GX.js   | p-DZmhtKIM    | 211 bytes |               211 bytes
+chunk-PJSO4SLQ.js   | p-BYRVyMu9    | 127 bytes |               127 bytes
+
+Application bundle generation complete. [3.224 seconds] - 2026-11-26T12:17:51.811Z
+
+Output location: /home/elseto/DAM2/interfaces/ActividadInd2/Actividad-2-Individual/www
+
+exit=0
