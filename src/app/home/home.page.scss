@@ -1,27 +1,61 @@
-#container {
+:host {
+  --lt-in-transit: #0a58ca;
+  --lt-inspected: #146c43;
+  --lt-rejected: #b02a37;
+  --lt-critical: #842029;
+  --lt-badge-text: #ffffff;
+}
+
+.pkg {
+  --border-width: 0 0 0 6px;
+  --border-style: solid;
+  --border-color: var(--lt-in-transit);
+
+  &--in-transit {
+    --border-color: var(--lt-in-transit);
+  }
+  &--inspected {
+    --border-color: var(--lt-inspected);
+  }
+  &--rejected {
+    --border-color: var(--lt-rejected);
+  }
+  &--critical .pkg__priority {
+    color: var(--lt-critical);
+    font-weight: 700;
+  }
+}
+
+.badge {
+  color: var(--lt-badge-text);
+  padding: 6px 10px;
+  font-size: 0.8rem;
+
+  &--in_transit {
+    --background: var(--lt-in-transit);
+  }
+  &--inspected {
+    --background: var(--lt-inspected);
+  }
+  &--rejected {
+    --background: var(--lt-rejected);
+  }
+}
+
+.empty {
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  white-space: normal;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-item:focus-visible,
+ion-item-option:focus-visible {
+  outline: 3px solid var(--lt-in-transit);
+  outline-offset: -3px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
 }
