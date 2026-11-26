@@ -1,0 +1,31 @@
+<article class="package-item" [class]="statusClass()">
+  <div class="package-item__info">
+    <h3 class="package-item__code">{{ package().trackingCode }}</h3>
+    <p class="package-item__line">Destino: {{ package().destinationHub }}</p>
+    <p class="package-item__line">Peso: {{ weightLabel() }}</p>
+    <div class="package-item__badges">
+      <ion-badge [color]="priorityView().color">Prioridad: {{ priorityView().label }}</ion-badge>
+      <ion-badge [color]="statusView().color">Estado: {{ statusView().label }}</ion-badge>
+    </div>
+  </div>
+  <div class="package-item__actions">
+    <ion-button
+      fill="outline"
+      color="success"
+      [disabled]="package().status === 'INSPECTED'"
+      [attr.aria-label]="'Marcar paquete ' + package().trackingCode + ' como inspeccionado'"
+      (click)="request('INSPECTED')"
+    >
+      <ion-icon slot="icon-only" name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+    </ion-button>
+    <ion-button
+      fill="outline"
+      color="danger"
+      [disabled]="package().status === 'REJECTED'"
+      [attr.aria-label]="'Marcar paquete ' + package().trackingCode + ' como rechazado'"
+      (click)="request('REJECTED')"
+    >
+      <ion-icon slot="icon-only" name="close-circle-outline" aria-hidden="true"></ion-icon>
+    </ion-button>
+  </div>
+</article>

@@ -1,44 +1,13 @@
 :host {
   --lt-in-transit: #0a58ca;
-  --lt-inspected: #146c43;
-  --lt-rejected: #b02a37;
-  --lt-critical: #842029;
-  --lt-badge-text: #ffffff;
 }
 
 .pkg {
-  --border-width: 0 0 0 6px;
-  --border-style: solid;
-  --border-color: var(--lt-in-transit);
+  --padding-start: 0;
+  --inner-padding-end: 0;
 
-  &--in-transit {
-    --border-color: var(--lt-in-transit);
-  }
-  &--inspected {
-    --border-color: var(--lt-inspected);
-  }
-  &--rejected {
-    --border-color: var(--lt-rejected);
-  }
-  &--critical .pkg__priority {
-    color: var(--lt-critical);
-    font-weight: 700;
-  }
-}
-
-.badge {
-  color: var(--lt-badge-text);
-  padding: 6px 10px;
-  font-size: 0.8rem;
-
-  &--in_transit {
-    --background: var(--lt-in-transit);
-  }
-  &--inspected {
-    --background: var(--lt-inspected);
-  }
-  &--rejected {
-    --background: var(--lt-rejected);
+  app-package-item {
+    width: 100%;
   }
 }
 

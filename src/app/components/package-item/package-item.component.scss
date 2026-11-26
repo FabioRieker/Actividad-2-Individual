@@ -1,0 +1,54 @@
+:host {
+  display: block;
+}
+
+.package-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-left: 6px solid var(--ion-color-medium-shade);
+  background: var(--ion-item-background, #fff);
+  color: var(--ion-text-color);
+
+  &--in-transit {
+    border-left-color: var(--ion-color-warning-shade);
+  }
+
+  &--inspected {
+    border-left-color: var(--ion-color-success-shade);
+  }
+
+  &--rejected {
+    border-left-color: var(--ion-color-danger-shade);
+  }
+}
+
+.package-item__code {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.package-item__line {
+  margin: 0 0 2px;
+  font-size: 0.95rem;
+}
+
+.package-item__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.package-item__actions {
+  display: flex;
+  gap: 4px;
+}
+
+ion-button:focus-visible {
+  outline: 3px solid var(--ion-color-primary-shade);
+  outline-offset: 2px;
+}

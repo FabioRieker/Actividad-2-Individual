@@ -1,0 +1,3 @@
+debug: [vite] connecting...
+debug: [vite] connected.
+log: Angular is running in development mode.
