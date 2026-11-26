@@ -1,6 +1,6 @@
 import { Injectable, signal } from '@angular/core';
 
-import { PackageStatus, WarehousePackage } from '../models/package.model';
+import type { PackageStatus, WarehousePackage } from '../models/package.model';
 
 const INITIAL_PACKAGES: readonly WarehousePackage[] = [
   {
