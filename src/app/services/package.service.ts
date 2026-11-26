@@ -1,6 +1,6 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, computed, signal } from '@angular/core';
 
-import type { PackageStatus, WarehousePackage } from '../models/package.model';
+import type { PackagePriority, PackageStatus, WarehousePackage } from '../models/package.model';
 
 const INITIAL_PACKAGES: readonly WarehousePackage[] = [
   {
@@ -77,11 +77,36 @@ const INITIAL_PACKAGES: readonly WarehousePackage[] = [
   },
 ];
 
+export type PriorityFilter = 'ALL' | PackagePriority;
+
 @Injectable({ providedIn: 'root' })
 export class PackageService {
   private readonly _packages = signal<readonly WarehousePackage[]>(INITIAL_PACKAGES);
 
+  private readonly _searchTerm = signal('');
+  private readonly _priorityFilter = signal<PriorityFilter>('ALL');
+
   readonly packages = this._packages.asReadonly();
+  readonly searchTerm = this._searchTerm.asReadonly();
+  readonly priorityFilter = this._priorityFilter.asReadonly();
+
+  readonly filteredPackages = computed<readonly WarehousePackage[]>(() => {
+    const term = this._searchTerm().trim().toLowerCase();
+    const priority = this._priorityFilter();
+    return this._packages().filter(
+      (pkg) =>
+        (priority === 'ALL' || pkg.priority === priority) &&
+        (term === '' || pkg.trackingCode.toLowerCase().includes(term)),
+    );
+  });
+
+  setSearchTerm(term: string): void {
+    this._searchTerm.set(term);
+  }
+
+  setPriorityFilter(priority: PriorityFilter): void {
+    this._priorityFilter.set(priority);
+  }
 
   updateStatus(id: string, newStatus: PackageStatus): void {
     this._packages.update((current) => current.map((pkg) => (pkg.id === id ? { ...pkg, status: newStatus } : pkg)));
