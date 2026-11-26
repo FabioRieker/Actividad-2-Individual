@@ -21,4 +21,3 @@ All files pass linting.
 
 Checking formatting...
 All matched files use Prettier code style!
-exit 0
