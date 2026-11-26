@@ -17,7 +17,9 @@
     "typecheck": "tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.spec.json",
     "test:unit": "ng test --no-watch",
     "test:unit:watch": "ng test --watch",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "prepare": "husky",
+    "capture": "node scripts/capture.mjs"
   },
   "private": true,
   "dependencies": {
@@ -44,6 +46,8 @@
     "@angular/compiler-cli": "21.2.26",
     "@angular/language-service": "21.2.26",
     "@capacitor/cli": "8.6.3",
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
     "@ionic/angular-toolkit": "^12.3.0",
     "@ionic/eslint-config": "^0.5.0",
     "@ionic/prettier-config": "^4.0.0",
@@ -51,6 +55,7 @@
     "@types/node": "^26.6.6",
     "angular-eslint": "21.4.0",
     "eslint": "^10.10.0",
+    "husky": "^9.1.7",
     "jsdom": "^31.0.0",
     "prettier": "^3.9.10",
     "typescript": "~5.9.3",
